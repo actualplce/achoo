@@ -51,3 +51,15 @@ git remote add origin https://github.com/actualplce/achoo.git
 git branch
 git push origin master
 clear
+git add .
+git status
+git commit -m "commented jpeg.cs50"
+bit branch
+git branch
+check out 210214jpeg
+git checkout 210214jpeg
+git checkout branch 210214jpeg
+git branch 210214jpeg
+git branch
+git checkout 210214jpeg
+git branch
