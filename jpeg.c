@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[]){   // (210214jpeg) $ ./jpeg src/parrot.gif
 
 
     // 입력값이 두개인지 검사
@@ -17,8 +17,10 @@ int main(int argc, char *argv[]){
     unsigned char bytes[3];     //unsigned: -128~127범위의 값을 0~255로 표현하기위해.
     fread(bytes, 3, 1, file);   //fread(파일내에서읽을 배열, 3바이트까지, 1번읽음, 읽을파일)
     if (bytes[0]==0xff && bytes[1]==0xd8 && bytes[2]==0xff){  //JPEG주소상의 표기 약속(ff && d8 && ff 순서)
-        printf("아마 JPEG\n");
+        printf("아마 JPEG or jpg\n");
+    }else if(bytes[0]==0x47 && bytes[1]==0x49 && bytes[2]==0x46){
+        printf("아마 GIF\n");
     }else{
-        printf("아냐 JPEG");
+        printf("아냐 JPEG(or jpg),GIF");
     }
 }

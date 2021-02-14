@@ -63,3 +63,21 @@ git branch 210214jpeg
 git branch
 git checkout 210214jpeg
 git branch
+git add .
+git status
+git commit -m "add comment"
+git push
+git push --set -upstream origin 210214jpeg
+git status
+git branch
+git push -u 210214jpeg
+git config --global user.name
+git remote add origin https://github.com/actualplce/achoo.git
+git push origin 210214jpeg
+clear
+make jpeg
+./jpeg src/p1.jpg
+clear
+make jpeg
+./jpeg src/parrot.gif
+git branch
