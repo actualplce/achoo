@@ -41,3 +41,13 @@ submit50 -v
 submit50 -v git
 git
 git init
+git add .
+git status
+git commit -m "cs50_jpeg"
+git remote https://github.com/actualplce/achoo.git
+git config --global user.name "actualplce"
+git config --global user.email "actualplce@hanmail.net"
+git remote add origin https://github.com/actualplce/achoo.git
+git branch
+git push origin master
+clear
